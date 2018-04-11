@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Иван Жуков](https://up.htmlacademy.ru/adaptive/14/user/671871).
-* Наставник: `Неизвестно`.
+* Наставник: [Вадим Новаш](https://up.htmlacademy.ru/adaptive/14/user/8589).
 
 ---
 
