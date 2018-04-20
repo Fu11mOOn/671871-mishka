@@ -1,8 +1,28 @@
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-navigation__toggle {
+  align-self: flex-end;
+  width: 21px;
+  height: 80px;
+  border: none;
+  background-color: #ffffff;
+}
+
 .main-navigation__list {
   .set-clean-list();
   .set-font(400; 17px; 24px;);
 }
 
+.main-navigation__item {
+  display: flex;
+}
+
 .main-navigation__link {
-  margin: 28px auto;
+  padding: 28px 45px;
+  width: 100%;
+  min-height: 23px;
+  border-bottom: 1px solid #ececec;
 }

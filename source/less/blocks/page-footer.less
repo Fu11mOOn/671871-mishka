@@ -1,5 +1,35 @@
 .page-footer {
+  display: flex;
+  flex-direction: column;
   background-color: #f1f1f1;
-  padding: 0 30px;
   outline: 1px solid black;
+}
+
+.page-footer__list {
+  display: flex;
+  padding: 25px 62px 27px 57px;
+  min-height: 28px;
+  .set-clean-list();
+}
+
+.page-footer__item {
+  display: flex;
+  width: 23px;
+  height: 28px;
+}
+
+.page-footer__copyright {
+  display: flex;
+  padding: 22px 39px 22px 37px;
+  min-height: 34px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.page-footer__text {
+  .set-font(700; 19px; 18px)
+}
+
+.page-footer__copyright-link {
+  width: 27px;
+  height: 34px;
 }

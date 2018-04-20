@@ -2,12 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Каталог товаров - Mishka</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo-link" href="index.html">
+      <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Логотип магазина Мишка">
       </a>
       <nav class="main-navigation page-header__navigation">
@@ -32,9 +34,9 @@
     </header>
     <main class="page-main page-main--catalog">
       <header class="page-main__header">
-        <h1 class="page-main__title">Каталог товаров</h1>
+        <h1 class="page-main__title container">Каталог товаров</h1>
       </header>
-      <section class="catalog">
+      <section class="catalog container">
         <h2 class="visually-hidden">Список товаров</h2>
         <ul class="catalog__list">
           <li class="catalog__item">
@@ -84,16 +86,16 @@
             <form class="modal-basket__form" action="https://echo.htmlacademy.ru" method="post">
               <ul class="modal-basket__list">
                 <li class="modal-basket__item">
-                  <input id="size-s" type="radio" name="size" value="s" checked>
-                  <label for="size-s">S</label>
+                  <input class="visually-hidden" id="size-s" type="radio" name="size" value="s" checked>
+                  <label class="modal-basket__label" for="size-s">S</label>
                 </li>
                 <li class="modal-basket__item">
-                  <input id="size-m" type="radio" name="size" value="m">
-                  <label for="size-m">M</label>
+                  <input class="visually-hidden" id="size-m" type="radio" name="size" value="m">
+                  <label class="modal-basket__label" for="size-m">M</label>
                 </li>
                 <li class="modal-basket__item">
-                  <input id="size-l" type="radio" name="size" value="l">
-                  <label for="size-l">L</label>
+                  <input class="visually-hidden" id="size-l" type="radio" name="size" value="l">
+                  <label class="modal-basket__label" for="size-l">L</label>
                 </li>
               </ul>
               <button class="button button--form modal-basket__button" type="submit">Добавить</button>
@@ -112,27 +114,27 @@
         <a class="button production-process__button" href="form.html">Сделать заказ</a>
       </section>
     </main>
-    <footer class="page-footer">
-      <ul class="social-list page-footer__list">
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--icon-instagram" href="https://www.instagram.com/" target="_blank">
+    <footer class="page-footer container">
+      <ul class="page-footer__list">
+        <li class="page-footer__item">
+          <a class="page-footert__link page-footer__link--icon-instagram" href="https://www.instagram.com/" target="_blank">
             <span class="visually-hidden">Instagram</span>
           </a>
         </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--icon-facebook" href="https://www.facebook.com/" target="_blank">
+        <li class="page-footer__item">
+          <a class="page-footer__link page-footer__link--icon-facebook" href="https://www.facebook.com/" target="_blank">
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--icon-twitter" href="https://twitter.com/" target="_blank">
+        <li class="page-footer__item">
+          <a class="page-footer__link page-footer__link--icon-twitter" href="https://twitter.com/" target="_blank">
             <span class="visually-hidden">Twitter</span>
           </a>
         </li>
       </ul>
-      <div class="copyright page-footer__copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+      <div class="page-footer__copyright">
+        <b class="page-footer__text">Разработано</b>
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           <span class="visually-hidden">HTML Academy</span>
         </a>
       </div>

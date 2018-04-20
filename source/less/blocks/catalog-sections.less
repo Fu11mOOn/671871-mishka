@@ -1,4 +1,6 @@
 .catalog-sections {
+  display: flex;
+  flex-direction: column;
   outline: 1px solid black;
 }
 
@@ -7,14 +9,21 @@
   .set-font(700; 19px; 24px; #ffffff);
 }
 
-.catalog-sections__link {
-  margin: 28px auto 28px 30px;
+.catalog-sections__item {
+  display: flex;
+  align-items: center;
 
-  &--icon-lamp {
+  &--color-lightcyan {
     background-color: #63d1bb;
   }
 
-  &--icon-lego {
+  &--color-darkcyan {
     background-color: #56c3b2;
   }
+}
+
+.catalog-sections__link {
+  padding: 28px 130px 28px 30px;
+  width: 100%;
+  min-height: 47px;
 }

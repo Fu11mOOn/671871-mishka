@@ -1,26 +1,64 @@
+.main-form {
+  display: flex;
+  flex-direction: column;
+}
+
 .main-form__item {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   margin-top: 45px;
+  border: none;
+  border-top: 1px solid #62d1ba;
 }
 
 .main-form__title {
+  display: flex;
+  width: 62px;
   .set-font(700; 17px; 16px; #63d1bb);
   text-transform: uppercase;
 }
 
 .main-form__list {
+  display: flex;
+  flex-direction: column;
   .set-clean-list();
   .set-font(700; 17px; 18px);
 }
 
 .main-form__list-item {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   margin-top: 25px;
 }
 
 .main-form__list-label {
-  padding-left: 62px;
+
+  &--type {
+    padding-left: 62px;
+  }
+
+  &--color {
+    padding-left: 62px;
+  }
+}
+
+.main-form__list-input {
+  height: 48px;
+  border: none;
+  border-bottom: 2px solid #000000;
+}
+
+.main-form__list-textarea {
+  margin-top: 25px;
+  padding: 14px;
+  padding-right: 36px;
+  min-width: 206px;
+  min-height: 110px;
+  border: 2px solid #444444;
+  resize: none;
 }
 
 .main-form__text {
