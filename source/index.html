@@ -8,35 +8,38 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Логотип магазина Мишка">
-      </a>
+    <header class="page-header container">
       <nav class="main-navigation page-header__navigation">
+        <div class="main-navigation__wrapper">
+          <a class="main-navigation__logo">
+            <img class="main-navigation__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Логотип магазина Мишка">
+          </a>
+        </div>
         <button class="main-navigation__toggle" type="button" name="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-navigation__list">
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="catalog.html">Каталог товаров</a>
+          <li class="main-navigation__item main-navigation__item--catalog">
+            <a class="main-navigation__link main-navigation__link--catalog" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="form.html">Вязание на заказ</a>
+          <li class="main-navigation__item main-navigation__item--form">
+            <a class="main-navigation__link main-navigation__link--form" href="form.html">Вязание на заказ</a>
           </li>
-          <li class="main-navigation__item main-navigation__item--icon-search">
-            <a class="main-navigation__link" href="search.html">Поиск по сайту</a>
+          <li class="main-navigation__item main-navigation__item--search">
+            <a class="main-navigation__link main-navigation__link--search" href="search.html">Поиск по сайту</a>
           </li>
-          <li class="main-navigation__item main-navigation__item--icon-basket">
-            <a class="main-navigation__link" href="basket.html">Корзина: пока пуста</a>
+          <li class="main-navigation__item main-navigation__item--basket">
+            <a class="main-navigation__link main-navigation__link--basket" href="basket.html">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
+      <p class="page-header__text">Бесплатная доставка по России</p>
     </header>
     <main class="page-main page-main--index">
       <header class="page-main__header page-main__header--index">
         <h1 class="page-main__title container">Милые штуки ручной работы для дома</h1>
       </header>
-      <section class="catalog-sections">
+      <section class="catalog-sections container">
         <h2 class="visually-hidden">Разделы каталога</h2>
         <ul class="catalog-sections__list">
           <li class="catalog-sections__item catalog-sections__item--color-lightcyan">
@@ -61,7 +64,9 @@
             <dt class="best-product__item">Высота:</dt>
             <dd class="best-product__value">15 см</dd>
         </dl>
-        <img class="best-product__image" src="http://placehold.it/260x315" width="260" height="315" alt="Цветные вязаные корзинки">
+        <div class="best-product__wrapper-image">
+          <img class="best-product__image" src="http://placehold.it/260x315" width="260" height="315" alt="Цветные вязаные корзинки">
+        </div>
         <p class="best-product__price">Цена: 990 руб.</p>
         <a class="button best-product__button" href="knitted-baskets.html">Заказать</a>
         <section class="modal-basket">
@@ -83,7 +88,7 @@
                   <label class="modal-basket__label" for="size-l">L</label>
                 </li>
               </ul>
-              <button class="button button--form modal-basket__button" type="submit">Добавить</button>
+              <button class="button button--modal modal-basket__button" type="submit">Добавить</button>
             </form>
           </div>
         </section>
@@ -117,64 +122,71 @@
           <blockquote class="reviews__item">
             <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
             <cite class="reviews__author">
-              <b class="reviews__author-bold">Анастасия Красильникова</b> @misssssiskras
+              <b class="reviews__author-bold">Анастасия Красильникова</b><br>@misssssiskras
             </cite>
           </blockquote>
+          <ul class="reviews__pagination-list">
+            <li class="reviews__pagination-item">
+              <button class="reviews__pagination-button reviews__pagination-button--icon-back" type="button">
+                <span class="visually-hidden">Предыдущий отзыв</span>
+              </button>
+            </li>
+            <li class="reviews__pagination-item">
+              <button class="reviews__pagination-button reviews__pagination-button--icon-next" type="button">
+                <span class="visually-hidden">Следующий отзыв</span>
+              </button>
+            </li>
+          </ul>
         </div>
-        <ul class="reviews__pagination-list">
-          <li class="reviews__pagination-item">
-            <button class="reviews__pagination-button reviews__pagination-button--icon-back" type="button">
-              <span class="visually-hidden">Предыдущий отзыв</span>
-            </button>
-          </li>
-          <li class="reviews__pagination-item">
-            <button class="reviews__pagination-button reviews__pagination-button--icon-next" type="button">
-              <span class="visually-hidden">Следующий отзыв</span>
-            </button>
-          </li>
-        </ul>
-        <a class="button reviews__send-button" href="write-review.html">Написать</a>
+        <a class="button button--reviews reviews__button" href="write-review.html">Написать</a>
       </article>
       <section class="contacts container">
         <h2 class="contacts__title">Контакты</h2>
         <dl class="contacts__list">
           <dt class="contacts__item">e-mail:</dt>
           <dd class="contacts__value contacts__value--underline">
-            <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
           </dd>
           <dt class="contacts__item">адрес:</dt>
-          <dd class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</dd>
+          <dd class="contacts__value">г. Санкт-Петербург,<br>ул. Большая Конюшенная,<br>д. 19/8, офис 101</dd>
         </dl>
         <section class="contacts__map-wrapper">
           <h3 class="visually-hidden">Окно с картой</h3>
           <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CBqq54fyOA" width="215" height="457"></iframe>
         </section>
-        <a class="button contacts__button" href="write-us.html">Напишите нам</a>
+        <a class="button button--contacts contacts__button" href="write-us.html">Напишите нам</a>
       </section>
     </main>
-    <footer class="page-footer container">
-      <ul class="page-footer__list">
-        <li class="page-footer__item">
-          <a class="page-footert__link page-footer__link--icon-instagram" href="https://www.instagram.com/" target="_blank">
-            <span class="visually-hidden">Instagram</span>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper container">
+        <div class="page-footer__wrapper-logo">
+          <a class="page-footer__logo">
+            <img src="http://placehold.it/102x34" alt="Логотип магазина Мишка">
           </a>
-        </li>
-        <li class="page-footer__item">
-          <a class="page-footer__link page-footer__link--icon-facebook" href="https://www.facebook.com/" target="_blank">
-            <span class="visually-hidden">Facebook</span>
+        </div>
+        <ul class="page-footer__list">
+          <li class="page-footer__item">
+            <a class="page-footer__link page-footer__link--icon-instagram" href="https://www.instagram.com/" target="_blank">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+          <li class="page-footer__item">
+            <a class="page-footer__link page-footer__link--icon-facebook" href="https://www.facebook.com/" target="_blank">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="page-footer__item">
+            <a class="page-footer__link page-footer__link--icon-twitter" href="https://twitter.com/" target="_blank">
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright">
+          <b class="page-footer__text">Разработано</b>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+            <span class="visually-hidden">HTML Academy</span>
           </a>
-        </li>
-        <li class="page-footer__item">
-          <a class="page-footer__link page-footer__link--icon-twitter" href="https://twitter.com/" target="_blank">
-            <span class="visually-hidden">Twitter</span>
-          </a>
-        </li>
-      </ul>
-      <div class="page-footer__copyright">
-        <b class="page-footer__text">Разработано</b>
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-          <span class="visually-hidden">HTML Academy</span>
-        </a>
+        </div>
       </div>
     </footer>
   </body>

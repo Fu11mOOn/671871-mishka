@@ -1,19 +1,26 @@
 .page-header {
-  width: 100%;
+  position: relative;
   display: flex;
   flex-direction: column;
+  padding: 0;
   outline: 1px solid black;
 }
 
-.page-header__logo {
-  display: flex;
-  padding: 0 30px;
-  width: 100%;
-  min-height: 79px;
-  box-sizing: border-box;
-  border-bottom: 1px solid #ececec;
+.page-header__text {
+  display: none;
+  .set-font(400; 15px; 24px; #444444);
 }
 
-.page-header__logo-image {
-  margin: 22px auto;
+@media (min-width: @tablet-width) {
+  .page-header {
+    flex-direction: row;
+  }
+
+  .page-header__text {
+    position: absolute;
+    top: 113px;
+    right: 50px;
+    display: block;
+    margin: 0;
+  }
 }

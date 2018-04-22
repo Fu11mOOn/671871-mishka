@@ -8,29 +8,32 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Логотип магазина Мишка">
-      </a>
+    <header class="page-header container">
       <nav class="main-navigation page-header__navigation">
+        <div class="main-navigation__wrapper">
+          <a class="main-navigation__logo" href="index.html">
+            <img class="main-navigation__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Логотип магазина Мишка">
+          </a>
+        </div>
         <button class="main-navigation__toggle" type="button" name="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-navigation__list">
-          <li class="main-navigation__item">
-            <a class="main-navigation__link">Каталог товаров</a>
+          <li class="main-navigation__item main-navigation__item--catalog">
+            <a class="main-navigation__link main-navigation__link--catalog">Каталог товаров</a>
           </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="form.html">Вязание на заказ</a>
+          <li class="main-navigation__item main-navigation__item--form">
+            <a class="main-navigation__link main-navigation__link--form" href="form.html">Вязание на заказ</a>
           </li>
-          <li class="main-navigation__item main-navigation__item--icon-search">
-            <a class="main-navigation__link" href="search.html">Поиск по сайту</a>
+          <li class="main-navigation__item main-navigation__item--search">
+            <a class="main-navigation__link main-navigation__link--search" href="search.html">Поиск по сайту</a>
           </li>
-          <li class="main-navigation__item main-navigation__item--icon-basket">
-            <a class="main-navigation__link" href="basket.html">Корзина: пока пуста</a>
+          <li class="main-navigation__item main-navigation__item--basket">
+            <a class="main-navigation__link main-navigation__link--basket" href="basket.html">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
+      <p class="page-header__text">Бесплатная доставка по России</p>
     </header>
     <main class="page-main page-main--catalog">
       <header class="page-main__header">
@@ -40,42 +43,54 @@
         <h2 class="visually-hidden">Список товаров</h2>
         <ul class="catalog__list">
           <li class="catalog__item">
-            <a class="catalog__link" href="item-1.html">
+            <a class="catalog__link-image" href="item-1.html">
               <img class="catalog__image" src="http://placehold.it/260x195" width="260" height="195" alt="Мягкий шерстяной заяц в бирюзовом костюме">
-              <h3 class="catalog__title">Зайчик-попрыгайчик</h3>
             </a>
-            <p class="catalog__properties">Рост 30 см, вес 200 г</p>
             <div class="catalog__wrapper">
-              <b class="catalog__price">1 200 руб.</b>
-              <button class="catalog__button" type="button" name="button">
-                <span class="visually-hidden">Добавить в корзину</span>
-              </button>
+              <a class="catalog__link" href="item-1.html">
+                <h3 class="catalog__title">Зайчик-попрыгайчик</h3>
+              </a>
+              <p class="catalog__properties">Рост 30 см, вес 200 г</p>
+              <div class="catalog__wrapper-buy">
+                <b class="catalog__price">1 200 руб.</b>
+                <button class="catalog__button" type="button" name="button">
+                  <span class="visually-hidden">Добавить в корзину</span>
+                </button>
+              </div>
             </div>
           </li>
           <li class="catalog__item">
-            <a class="catalog__link" href="item-2.html">
+            <a class="catalog__link-image" href="item-2.html">
               <img class="catalog__image" src="http://placehold.it/260x195" width="260" height="195" alt="Стильная шерстяная корзина в красно-белом цвете">
-              <h3 class="catalog__title">Корзинка для белья</h3>
             </a>
-            <p class="catalog__properties">Диаметр 15 см, высота 10 см</p>
             <div class="catalog__wrapper">
-              <b class="catalog__price">690 руб.</b>
-              <button class="catalog__button" type="button" name="button">
-                <span class="visually-hidden">Добавить в корзину</span>
-              </button>
+              <a class="catalog__link" href="item-2.html">
+                <h3 class="catalog__title">Корзинка для белья</h3>
+              </a>
+              <p class="catalog__properties">Диаметр 15 см, высота 10 см</p>
+              <div class="catalog__wrapper-buy">
+                <b class="catalog__price">690 руб.</b>
+                <button class="catalog__button" type="button" name="button">
+                  <span class="visually-hidden">Добавить в корзину</span>
+                </button>
+              </div>
             </div>
           </li>
           <li class="catalog__item">
-            <a class="catalog__link" href="item-3.html">
+            <a class="catalog__link-image" href="item-3.html">
               <img class="catalog__image" src="http://placehold.it/260x195" width="260" height="195" alt="Вместительная шерстяная корзина в бело-зеленом цвете">
-              <h3 class="catalog__title">Большая корзинка для игрушек</h3>
             </a>
-            <p class="catalog__properties">Диаметр 30 см, высота 30 см</p>
             <div class="catalog__wrapper">
-              <b class="catalog__price">1 500 руб.</b>
-              <button class="catalog__button" type="button" name="button">
-                <span class="visually-hidden">Добавить в корзину</span>
-              </button>
+              <a class="catalog__link">
+                <h3 class="catalog__title">Большая корзинка для игрушек</h3>
+              </a>
+              <p class="catalog__properties">Диаметр 30 см, высота 30 см</p>
+              <div class="catalog__wrapper-buy">
+                <b class="catalog__price">1 500 руб.</b>
+                <button class="catalog__button" type="button" name="button">
+                  <span class="visually-hidden">Добавить в корзину</span>
+                </button>
+              </div>
             </div>
           </li>
         </ul>
@@ -98,45 +113,54 @@
                   <label class="modal-basket__label" for="size-l">L</label>
                 </li>
               </ul>
-              <button class="button button--form modal-basket__button" type="submit">Добавить</button>
+              <button class="button button--modal modal-basket__button" type="submit">Добавить</button>
             </form>
           </div>
         </section>
       </section>
-      <section class="production-process">
-        <header class="production-process__header">
-          <h2 class="production-process__title">Процесс производства</h2>
-        </header>
-        <figure class="production-process__video">
-          <img class="production-process__image" src="http://placehold.it/260x150" width="260" height="150" alt="Процесс производства товаров">
-          <figcaption class="production-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</figcaption>
-        </figure>
-        <a class="button production-process__button" href="form.html">Сделать заказ</a>
+      <section class="production-process container">
+        <div class="production-process__wrapper">
+          <header class="production-process__header">
+            <h2 class="production-process__title">Процесс производства</h2>
+          </header>
+          <figure class="production-process__video">
+            <img class="production-process__image" src="http://placehold.it/260x150" width="260" height="150" alt="Процесс производства товаров">
+          </figure>
+          <p class="production-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="button button--process production-process__button" href="form.html">Сделать заказ</a>
+        </div>
       </section>
     </main>
-    <footer class="page-footer container">
-      <ul class="page-footer__list">
-        <li class="page-footer__item">
-          <a class="page-footert__link page-footer__link--icon-instagram" href="https://www.instagram.com/" target="_blank">
-            <span class="visually-hidden">Instagram</span>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper container">
+        <div class="page-footer__wrapper-logo">
+          <a class="page-footer__logo" href="index.html">
+            <img src="http://placehold.it/102x34" alt="Логотип магазина Мишка">
           </a>
-        </li>
-        <li class="page-footer__item">
-          <a class="page-footer__link page-footer__link--icon-facebook" href="https://www.facebook.com/" target="_blank">
-            <span class="visually-hidden">Facebook</span>
+        </div>
+        <ul class="page-footer__list">
+          <li class="page-footer__item">
+            <a class="page-footer__link page-footer__link--icon-instagram" href="https://www.instagram.com/" target="_blank">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+          <li class="page-footer__item">
+            <a class="page-footer__link page-footer__link--icon-facebook" href="https://www.facebook.com/" target="_blank">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="page-footer__item">
+            <a class="page-footer__link page-footer__link--icon-twitter" href="https://twitter.com/" target="_blank">
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright">
+          <b class="page-footer__text">Разработано</b>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+            <span class="visually-hidden">HTML Academy</span>
           </a>
-        </li>
-        <li class="page-footer__item">
-          <a class="page-footer__link page-footer__link--icon-twitter" href="https://twitter.com/" target="_blank">
-            <span class="visually-hidden">Twitter</span>
-          </a>
-        </li>
-      </ul>
-      <div class="page-footer__copyright">
-        <b class="page-footer__text">Разработано</b>
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-          <span class="visually-hidden">HTML Academy</span>
-        </a>
+        </div>
       </div>
     </footer>
   </body>

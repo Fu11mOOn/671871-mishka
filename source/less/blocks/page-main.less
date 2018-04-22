@@ -35,3 +35,33 @@
   .set-font(700; 27px; 30px);
   text-align: center;
 }
+
+@media (min-width: @tablet-width) {
+  .page-main {
+    &--index {
+      padding-bottom: 57px;
+    }
+
+    &--catalog {
+      padding-bottom: 63px;
+    }
+
+    &--form {
+      padding-bottom: 50px;
+    }
+  }
+
+  .page-main__header {
+    margin-top: -73px;
+    min-height: 224px;
+
+    &--index {
+      margin-top: 0;
+      min-height: 562px;
+    }
+  }
+
+  .page-main__title {
+    .set-font(700; 43px; 50px;)
+  }
+}

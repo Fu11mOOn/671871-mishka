@@ -8,10 +8,39 @@
   text-transform: uppercase;
   border: 2px solid #444444;
 
-  &--form {
+  &--modal {
     min-height: 52px;
     background-color: #63d1bb;
+    line-height: 16px;
     color: #ffffff;
     border: none;
+  }
+
+  &--reviews {
+    font-size: 18px;
+  }
+
+  &--contacts {
+    font-size: 18px;
+  }
+
+  &--process {
+    line-height: 16px;
+  }
+
+  &--form {
+    line-height: 16px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .button {
+    &--reviews {
+      font-size: 17px;
+    }
+
+    &--contacts {
+      font-size: 17px;
+    }
   }
 }
