@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header container">
+    <header class="page-header container container--index">
       <nav class="main-navigation page-header__navigation">
         <div class="main-navigation__wrapper">
           <a class="main-navigation__logo">
@@ -31,15 +31,21 @@
           <li class="main-navigation__item main-navigation__item--basket">
             <a class="main-navigation__link main-navigation__link--basket" href="basket.html">Корзина: пока пуста</a>
           </li>
+          <li class="main-navigation__item main-navigation__item--new">
+            <a class="main-navigation__link main-navigation__link--new" href="new.html">Новые поступления</a>
+          </li>
+          <li class="main-navigation__item main-navigation__item--sale">
+            <a class="main-navigation__link main-navigation__link--sale" href="sale.html">Распродажа</a>
+          </li>
         </ul>
       </nav>
       <p class="page-header__text">Бесплатная доставка по России</p>
     </header>
     <main class="page-main page-main--index">
       <header class="page-main__header page-main__header--index">
-        <h1 class="page-main__title container">Милые штуки ручной работы для дома</h1>
+        <h1 class="page-main__title container container--index">Милые штуки ручной работы для дома</h1>
       </header>
-      <section class="catalog-sections container">
+      <section class="catalog-sections container container--index">
         <h2 class="visually-hidden">Разделы каталога</h2>
         <ul class="catalog-sections__list">
           <li class="catalog-sections__item catalog-sections__item--color-lightcyan">
@@ -50,7 +56,7 @@
           </li>
         </ul>
       </section>
-      <section class="best-product container">
+      <section class="best-product container container--index">
         <header class="best-product__header">
           <h2 class="best-product__title">Вязаные корзинки</h2>
           <p class="best-product__text">Товар недели</p>
@@ -64,7 +70,7 @@
             <dt class="best-product__item">Высота:</dt>
             <dd class="best-product__value">15 см</dd>
         </dl>
-        <div class="best-product__wrapper-image">
+        <div class="best-product__wrapper">
           <img class="best-product__image" src="http://placehold.it/260x315" width="260" height="315" alt="Цветные вязаные корзинки">
         </div>
         <p class="best-product__price">Цена: 990 руб.</p>
@@ -93,7 +99,7 @@
           </div>
         </section>
       </section>
-      <section class="advantages container">
+      <section class="advantages container container--index">
         <h2 class="advantages__title">Коротко о нас</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--flower">
@@ -116,7 +122,7 @@
           </li>
         </ul>
       </section>
-      <article class="reviews container">
+      <article class="reviews container container--index">
         <h2 class="reviews__title">Отзывы</h2>
         <div class="reviews__list">
           <blockquote class="reviews__item">
@@ -140,7 +146,7 @@
         </div>
         <a class="button button--reviews reviews__button" href="write-review.html">Написать</a>
       </article>
-      <section class="contacts container">
+      <section class="contacts container container--index">
         <h2 class="contacts__title">Контакты</h2>
         <dl class="contacts__list">
           <dt class="contacts__item">e-mail:</dt>
@@ -150,7 +156,7 @@
           <dt class="contacts__item">адрес:</dt>
           <dd class="contacts__value">г. Санкт-Петербург,<br>ул. Большая Конюшенная,<br>д. 19/8, офис 101</dd>
         </dl>
-        <section class="contacts__map-wrapper">
+        <section class="contacts__wrapper">
           <h3 class="visually-hidden">Окно с картой</h3>
           <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CBqq54fyOA" width="215" height="457"></iframe>
         </section>
@@ -158,7 +164,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__wrapper container">
+      <div class="page-footer__wrapper container container--index">
         <div class="page-footer__wrapper-logo">
           <a class="page-footer__logo">
             <img src="http://placehold.it/102x34" alt="Логотип магазина Мишка">

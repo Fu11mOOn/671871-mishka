@@ -6,7 +6,7 @@
 .main-form__item {
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin: 0 30px;
   padding: 0;
   margin-top: 45px;
   border: none;
@@ -18,6 +18,10 @@
   width: 62px;
   .set-font(700; 17px; 16px; #63d1bb);
   text-transform: uppercase;
+
+  &--e-mail {
+    width: 81px;
+  }
 }
 
 .main-form__list {
@@ -50,7 +54,7 @@
   display: flex;
   align-items: center;
   min-height: 40px;
-  .set-font(700; 17px; 18px);
+  .set-font(700; 17px; 18px;);
 
   &--type,
   &--color {
@@ -67,76 +71,59 @@
 }
 
 .main-form__text {
-  margin-top: 17px;
+  margin: 17px 30px 0;
   .set-font(400; 14px; 16px; #444444);
 }
 
+.main-form__wrapper-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
 .main-form__button {
-  margin-top: 30px;
+  margin: 30px 30px 0;
 }
 
 @media (min-width: @tablet-width) {
-  .main-form {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
   .main-form__item {
     position: relative;
     flex-direction: row;
     margin: 0;
-    padding: 30px 0 50px;
-    padding-left: 169px;
-    width: 100%;
+    padding: 30px 50px 50px;
+    padding-left: 219px;
     border: none;
 
     &--color,
     &--telephone,
     &--e-mail {
-      margin: 0 -50px;
-      padding: 50px;
+      flex-grow: 1;
       padding-top: 30px;
-      background-color: #f1f1f1;
-    }
-
-    &--color {
-      padding-left: 219px;
     }
 
     &--telephone {
       padding-bottom: 0;
-      padding-left: 219px;
     }
 
     &--e-mail {
-      padding-top: 0px;
-      padding-left: 219px;
+      padding-top: 0;
     }
   }
 
   .main-form__title {
     position: absolute;
     top: 60px;
-    left: 0px;
-
-    &--color {
-      left: 50px;
-    }
+    left: 50px;
 
     &--telephone {
       top: 67px;
-      left: 50px;
     }
 
     &--e-mail {
       top: 37px;
-      left: 50px;
     }
 
     &--textarea {
       top: 47px;
-      left: 0;
     }
   }
 
@@ -144,19 +131,19 @@
     &--color {
       flex-direction: row;
       flex-wrap: wrap;
+      justify-content: space-between;
     }
   }
 
   .main-form__list-item {
-    margin: 0px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
     margin-top: 20px;
-
-    &--initials {
-      flex-direction: row;
-    }
 
     &--textarea {
       margin: 0;
+      min-height: 142px;
       font-size: 19px;
     }
   }
@@ -164,26 +151,126 @@
   .main-form__list-label {
     font-size: 19px;
 
+    &--type,
     &--color {
-      min-width: 186px;
+      padding-left: 82px;
+    }
+
+    &--color {
+      width: 157px;
     }
   }
 
   .main-form__list-input {
+    flex-grow: 1;
+    width: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
     font-size: 19px;
 
     &--initials {
-      flex-grow: 1;
       margin-left: 26px;
     }
   }
 
+  .main-form__wrapper {
+    display: flex;
+    background-color: #f1f1f1;
+  }
+
+  .main-form__wrapper-bottom {
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .main-form__text {
     order: 1;
+    margin-right: 50px;
   }
 
   .main-form__button {
     margin-top: 3px;
+    margin-left: 50px;
     width: 226px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-form__item {
+    flex-grow: 0;
+    margin: 0 auto;
+    padding: 26px 0 50px;
+
+    &--telephone {
+      padding-bottom: 0;
+    }
+
+    &--e-mail {
+      padding-top: 20px;
+    }
+  }
+
+  .main-form__title {
+    left: 110px;
+
+    &--telephone {
+      top: 45px;
+    }
+
+    &--textarea {
+      left: 60px;
+    }
+  }
+
+  .main-form__list, {
+    margin: 0 auto;
+    padding-left: 225px;
+    padding-right: 225px;
+    width: 700px;
+
+    &--color {
+      justify-content: flex-start;
+      padding-right: 50px;
+      width: 875px;
+    }
+  }
+
+  .main-form__list-item {
+    margin-top: 24px;
+
+    &--telephone,
+    &--e-mail {
+      margin: 0 auto;
+      padding-left: 225px;
+      padding-right: 225px;
+      width: 700px;
+    }
+
+    &--textarea {
+      margin: 0 auto;
+      width: 700px;
+    }
+  }
+
+  .main-form__list-label {
+    &--color {
+      width: 180px;
+    }
+  }
+
+  .main-form__wrapper-bottom {
+    flex-grow: 0;
+    padding: 0 225px;
+    margin: 0 auto;
+    width: 700px;
+  }
+
+  .main-form__text {
+    margin-right: 0;
+  }
+
+  .main-form__button {
+    margin-left: 0;
   }
 }

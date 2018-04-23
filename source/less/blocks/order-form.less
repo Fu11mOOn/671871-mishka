@@ -6,7 +6,6 @@
 }
 
 .order-form__text {
-  margin: 0;
   .set-font(400; 13px; 24px; #444444);
 }
 
@@ -17,5 +16,15 @@
 
   .order-form__text {
     .set-font(400; 17px; 30px; #444444);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .order-form {
+    margin-top: 130px;
+  }
+
+  .order-form__text {
+    width: 700px;
   }
 }

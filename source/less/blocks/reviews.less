@@ -78,13 +78,13 @@
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
-    min-height: 457px;
+    padding-top: 79px;
+    min-height: 378px;
     .paste-image("../img/review@1x.jpg"; 350px 457px; top left;);
   }
 
   .reviews__title {
     order: 1;
-    margin-top: 75px;
     .set-font(700; 43px; 50px;);
   }
 
@@ -125,8 +125,29 @@
   }
 
   .reviews__button {
+    margin-top: 5px;
     order: 2;
-    margin-top: 79px;
     min-width: 171px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .reviews {
+    margin-top: 88px;
+  }
+
+  .reviews__title {
+    .set-font(700; 53px; 57px;);
+  }
+
+  .reviews__title,
+  .reviews__list,
+  .reviews__button {
+    margin-left: 175px;
+  }
+
+  .reviews__text {
+    margin-right: 100px;
   }
 }

@@ -1,4 +1,5 @@
 .modal-basket {
+  z-index: 1;
   display: none;
   // display: flex;
   flex-direction: column;
@@ -19,6 +20,7 @@
   align-items: center;
   padding: 30px 30px 45px;
   min-height: 233px;
+  background-color: #ffffff;
   outline: 1px solid black;
 }
 
@@ -48,9 +50,9 @@
   align-self: center;
   display: flex;
   justify-content: space-between;
+  .set-clean-list();
   margin-top: 25px;
   width: 260px;
-  .set-clean-list();
 }
 
 .modal-basket__item {
@@ -63,7 +65,7 @@
   align-items: center;
   min-width: 78px;
   min-height: 48px;
-  border: 2px solid #63d1bb;
+  border: 2px solid #ececec;
 }
 
 .modal-basket__button {
@@ -96,5 +98,11 @@
 
   .modal-basket__button {
     width: 350px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .modal-basket__wrapper {
+    margin: 0 341px;
   }
 }
