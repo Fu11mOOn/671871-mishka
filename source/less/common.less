@@ -1,7 +1,18 @@
 body {
+  min-width: 320px;
   margin: 0;
   padding: 0;
   background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -15,7 +26,25 @@ body {
   overflow: hidden;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+.container {
+  padding: 0 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .container {
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    margin: 0 auto;
+    padding: 0 50px;
+    width: 1050px;
+
+    &--index {
+      padding: 0 100px;
+      width: 1050px;
+    }
+  }
 }

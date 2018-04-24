@@ -1,9 +1,40 @@
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  background-color: #ffffff;
   .set-font(700; 17px; 20px; #444444);
   text-transform: uppercase;
+  border: 2px solid #444444;
 
-  &--form {
+  &--modal {
+    min-height: 52px;
     background-color: #63d1bb;
+    line-height: 16px;
     color: #ffffff;
+    border: none;
+  }
+
+  &--reviews,
+  &--contacts {
+    font-size: 18px;
+  }
+
+  &--process,
+  &--form {
+    line-height: 16px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .button {
+    &--reviews {
+      font-size: 17px;
+    }
+
+    &--contacts {
+      font-size: 17px;
+    }
   }
 }

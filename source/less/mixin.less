@@ -6,8 +6,15 @@
   color: @color;
 }
 
-.set-clean-list(@margin: 0; @padding: 0;) {
+.set-clean-list(@margin: 0; @padding: 0) {
   margin: @margin;
   padding: @padding;
   list-style: none;
+}
+
+.paste-image(@url; @picture-size; @picture-position: center; @picture-repeat: no-repeat) {
+  background-image: url(@url);
+  background-size: @picture-size;
+  background-position: @picture-position;
+  background-repeat: @picture-repeat;
 }
