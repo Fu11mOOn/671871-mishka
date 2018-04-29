@@ -18,7 +18,6 @@
 .page-footer__logo {
   position: relative;
   display: none;
-  cursor: pointer;
 
   &::before {
     content: "";
@@ -29,17 +28,17 @@
     height: 34px;
   }
 
-  &:hover img,
-  &:active img {
+  &[href]:hover img,
+  &[href]:active img {
     display: none;
   }
 
-  &:hover::before,
-  &:active::before {
+  &[href]:hover::before,
+  &[href]:active::before {
     .paste-image(-1157px 0px;);
   }
 
-  &:active::before {
+  &[href]:active::before {
     opacity: 0.3;
   }
 }
