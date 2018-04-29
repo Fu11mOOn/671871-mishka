@@ -8,12 +8,26 @@
   text-transform: uppercase;
   border: 2px solid #444444;
 
+  &:not(&--modal):hover,
+  &:not(&--modal):active {
+    background-color: #444444;
+  }
+
+  &:not(&--modal):hover {
+    color: #ffffff;
+  }
+
+  &:not(&--modal):active {
+    color: fade(#ffffff, 30%);
+  }
+
   &--modal {
     min-height: 52px;
     background-color: #63d1bb;
     line-height: 16px;
     color: #ffffff;
     border: none;
+    cursor: pointer;
   }
 
   &--reviews,

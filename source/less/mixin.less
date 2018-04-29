@@ -12,7 +12,7 @@
   list-style: none;
 }
 
-.paste-image(@url; @picture-size; @picture-position: center; @picture-repeat: no-repeat) {
+.paste-image(@picture-position; @url: @sprites-url; @picture-size: @sprites-size; @picture-repeat: no-repeat) {
   background-image: url(@url);
   background-size: @picture-size;
   background-position: @picture-position;
