@@ -1,10 +1,11 @@
 .catalog-sections {
+  position: relative;
   display: flex;
   flex-direction: column;
+  background-color: #f9f9f9;
 }
 
 .catalog-sections__wrapper {
-  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -99,11 +100,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .catalog-sections__list {
-    position: relative;
-    flex-direction: row;
-    margin: 0;
-
+  .catalog-sections {
     &::before {
       content: "";
       position: absolute;
@@ -114,6 +111,11 @@
       height: 22px;
       .paste-image(0px -187px; "../img/sprites.svg"; 1260px 247px; repeat);
     }
+  }
+
+  .catalog-sections__list {
+    flex-direction: row;
+    margin: 0;
   }
 
   .catalog-sections__item {
