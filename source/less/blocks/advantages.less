@@ -1,8 +1,13 @@
 .advantages {
-  position: relative;
   display: flex;
   flex-direction: column;
   margin-top: 39px;
+}
+
+.advantages__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   padding-top: 30px;
 
   &::before {
@@ -16,7 +21,7 @@
   }
 }
 
-.advantages__wrapper {
+.advantages__wrapper-content {
   display: flex;
   flex-direction: column;
 }
@@ -30,6 +35,7 @@
 .advantages__list {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   .set-clean-list();
 }
 
@@ -123,6 +129,9 @@
 @media (min-width: @tablet-width) {
   .advantages {
     margin-top: 53px;
+  }
+
+  .advantages__wrapper {
     padding-top: 65px;
 
     &::before {
@@ -131,7 +140,7 @@
     }
   }
 
-  .advantages__wrapper {
+  .advantages__wrapper-content {
     flex-wrap: wrap;
   }
 
@@ -215,6 +224,9 @@
 @media (min-width: @desktop-width) {
   .advantages {
     margin-top: 73px;
+  }
+
+  .advantages__wrapper {
     padding-top: 0;
 
     &::before {
@@ -222,7 +234,7 @@
     }
   }
 
-  .advantages__wrapper {
+  .advantages__wrapper-content {
     position: relative;
     padding-top: 82px;
 

@@ -4,8 +4,6 @@
 }
 
 .main-form__item {
-  display: flex;
-  flex-direction: column;
   margin: 0 30px;
   padding: 0;
   box-sizing: border-box;
@@ -31,7 +29,6 @@
 }
 
 .main-form__title {
-  display: flex;
   width: 62px;
   .set-font(700; 17px; 16px; #63d1bb);
   text-transform: uppercase;
@@ -254,6 +251,7 @@
 @media (min-width: @tablet-width) {
   .main-form__item {
     position: relative;
+    display: flex;
     flex-direction: row;
     margin: 0;
     padding: 30px 50px 50px;

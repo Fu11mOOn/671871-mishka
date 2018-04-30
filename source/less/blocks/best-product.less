@@ -1,8 +1,14 @@
 .best-product {
-  position: relative;
   display: flex;
   flex-direction: column;
   margin-top: 27px;
+}
+
+.best-product__wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .best-product__title {
@@ -47,7 +53,7 @@
   border-bottom: 1px solid #ececec;
 }
 
-.best-product__wrapper {
+.best-product__wrapper-image {
   display: flex;
   flex-wrap: wrap;
   align-self: center;
@@ -68,7 +74,6 @@
 
 @media (min-width: @tablet-width) {
   .best-product {
-    flex-wrap: wrap;
     margin-top: 35px;
   }
 
@@ -116,7 +121,7 @@
     margin-left: -1px;
   }
 
-  .best-product__wrapper {
+  .best-product__wrapper-image {
     position: absolute;
     top: 79px;
     right: 50px;
@@ -167,7 +172,7 @@
     flex-grow: 1;
   }
 
-  .best-product__wrapper {
+  .best-product__wrapper-image {
     top: 0;
     right: 0;
     margin: 0;
