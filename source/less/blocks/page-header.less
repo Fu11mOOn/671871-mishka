@@ -1,9 +1,13 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
   padding: 0;
-  outline: 1px solid black;
 }
 
 .page-header__text {
@@ -12,13 +16,13 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-header {
+  .page-header__wrapper {
     flex-direction: row;
   }
 
   .page-header__text {
     position: absolute;
-    top: 113px;
+    top: 106px;
     right: 50px;
     display: block;
     margin: 0;
@@ -29,9 +33,7 @@
   .page-header__navigation {
     margin: 0 -50px;
   }
-}
 
-@media (min-width: @desktop-width) {
   .page-header__text {
     right: 0;
   }

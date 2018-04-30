@@ -1,7 +1,6 @@
 .modal-basket {
   z-index: 1;
   display: none;
-  // display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -12,16 +11,22 @@
   height: 100%;
   background-color: fade(#ffffff, 90%);
   color: #444444;
+
+  &--js-visible {
+    display: flex;
+  }
 }
 
 .modal-basket__wrapper {
+  z-index: 3;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 30px 30px 45px;
   min-height: 233px;
   background-color: #ffffff;
-  outline: 1px solid black;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 20px -5px #777777;
 }
 
 .modal-basket__title {
@@ -34,7 +39,7 @@
 
 .modal-basket__text {
   margin: 0;
-  margin-top: 20px;
+  margin-top: 10px;
   text-align: center;
   .set-font(400; 15px; 30px);
 }
@@ -59,13 +64,27 @@
   display: flex;
 }
 
+.modal-basket__input {
+  &:checked ~ .modal-basket__label {
+    border-color: #62d1ba;
+  }
+}
+
 .modal-basket__label {
   display: flex;
   justify-content: center;
   align-items: center;
   min-width: 78px;
   min-height: 48px;
-  border: 2px solid #ececec;
+  border: 2px solid fade(#000000, 10%);
+
+  &:hover {
+    border-color: fade(#000000, 30%);
+  }
+
+  &:active {
+    border-color: #62d1ba;
+  }
 }
 
 .modal-basket__button {
@@ -77,11 +96,11 @@
 @media (min-width: @tablet-width) {
   .modal-basket__wrapper {
     margin: 0 100px;
-    width: 568px;
+    width: 506px;
   }
 
   .modal-basket__title {
-    .set-font(700; 30px; 57px;)
+    .set-font(700; 30px; 57px;);
   }
 
   .modal-basket__text {
@@ -89,6 +108,7 @@
   }
 
   .modal-basket__list {
+    margin-top: 5px;
     width: 350px;
   }
 

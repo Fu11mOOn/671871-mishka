@@ -1,23 +1,124 @@
 .advantages {
   display: flex;
   flex-direction: column;
-  margin-top: 35px;
+  margin-top: 39px;
+}
+
+.advantages__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   padding-top: 30px;
-  outline: 1px solid black;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    .paste-image(0px -145px;);
+  }
+}
+
+.advantages__wrapper-content {
+  display: flex;
+  flex-direction: column;
 }
 
 .advantages__title {
   margin: 0;
+  margin-left: -2px;
   .set-font(700; 25px; 30px);
 }
 
 .advantages__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   .set-clean-list();
 }
 
 .advantages__item {
-  margin-top: 30px;
-  padding-top: 40px;
+  position: relative;
+  margin-top: 28px;
+  padding-top: 55px;
+
+  &::before {
+    content: "";
+    position: absolute;
+  }
+
+  &--flower {
+    margin-top: 32px;
+    padding-right: 80px;
+
+    &::before {
+      top: 0;
+      left: 8px;
+      width: 32px;
+      height: 37px;
+      .paste-image(-234px 0px;);
+    }
+  }
+
+  &--money {
+    padding-right: 60px;
+
+    &::before {
+      top: 2px;
+      left: 1px;
+      width: 47px;
+      height: 27px;
+      .paste-image(-268px 0px;);
+    }
+  }
+
+  &--heart {
+    padding-right: 80px;
+
+    &::before {
+      top: 6px;
+      left: 7px;
+      width: 33px;
+      height: 28px;
+      .paste-image(-317px 0px;);
+    }
+  }
+
+  &--clew {
+    padding-right: 40px;
+
+    &::before {
+      top: 3px;
+      left: 5px;
+      width: 34px;
+      height: 34px;
+      .paste-image(-352px 0px;);
+    }
+  }
+
+  &--rocket {
+    &::before {
+      top: 4px;
+      left: -3px;
+      width: 54px;
+      height: 23px;
+      .paste-image(-389px 0px;);
+    }
+  }
+
+  &--gift {
+    padding-right: 60px;
+
+    &::before {
+      top: 2px;
+      left: 4px;
+      width: 33px;
+      height: 32px;
+      .paste-image(-445px 0px;);
+    }
+  }
 }
 
 .advantages__text {
@@ -27,22 +128,35 @@
 
 @media (min-width: @tablet-width) {
   .advantages {
+    margin-top: 53px;
+  }
+
+  .advantages__wrapper {
+    padding-top: 65px;
+
+    &::before {
+      height: 15px;
+      .paste-image(0px -128px;);
+    }
+  }
+
+  .advantages__wrapper-content {
     flex-wrap: wrap;
-    padding-top: 55px;
   }
 
   .advantages__title {
+    margin-left: -4px;
+    margin-bottom: -8px;
     .set-font(700; 43px; 50px;)
   }
 
   .advantages__list {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
   }
 
   .advantages__item {
-    flex-grow: 1;
-    margin-top: 50px;
+    margin-top: 56px;
     padding-right: 40px;
     width: 294px;
 
@@ -50,6 +164,11 @@
       order: 1;
       padding-right: 130px;
       width: 204px;
+
+      &::before {
+        top: 1px;
+        left: 9px;
+      }
     }
 
     &--money {
@@ -62,20 +181,38 @@
       order: 5;
       padding-right: 120px;
       width: 214px;
+
+      &::before {
+        left: 8px;
+      }
     }
 
     &--clew {
       order: 2;
+
+      &::before {
+        left: 3px;
+      }
     }
 
     &--rocket {
       order: 4;
+
+      &::before {
+        top: 5px;
+        left: -6px;
+      }
     }
 
     &--gift {
       order: 6;
       padding-right: 90px;
       width: 244px;
+
+      &::before {
+        top: 3px;
+        left: 3px;
+      }
     }
   }
 
@@ -87,20 +224,43 @@
 @media (min-width: @desktop-width) {
   .advantages {
     margin-top: 73px;
-    padding-top: 58px;
   }
 
-  .advantages__title,
-  .advantages__list {
-    margin: 0 175px;
+  .advantages__wrapper {
+    padding-top: 0;
+
+    &::before {
+      background-image: none;
+    }
+  }
+
+  .advantages__wrapper-content {
+    position: relative;
+    padding-top: 82px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 23px;
+      .paste-image(0px -103px;);
+    }
   }
 
   .advantages__title {
+    margin: 0 170px;
     .set-font(700; 53px; 57px;);
   }
 
+  .advantages__list {
+    margin: 0 175px;
+    margin-top: -8px;
+  }
+
   .advantages__item {
-    margin-top: 60px;
+    margin-top: 56px;
     padding-right: 50px;
     width: 300px;
 
