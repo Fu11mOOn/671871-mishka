@@ -13,7 +13,11 @@
         <nav class="main-navigation page-header__navigation">
           <div class="main-navigation__wrapper">
             <a class="main-navigation__logo" href="index.html">
-              <img class="main-navigation__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка">
+              <picture class="main-navigation__logo-image">
+                <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img src="img/logo-mobile.svg" alt="Логотип магазина Мишка">
+              </picture>
             </a>
           </div>
           <button class="main-navigation__toggle" type="button" name="button">
@@ -177,6 +181,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/picture-fill.min.js"></script>
     <script src="js/open-navigation.js"></script>
   </body>
 </html>
