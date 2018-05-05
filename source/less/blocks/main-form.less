@@ -162,23 +162,21 @@
   &--telephone,
   &--e-mail {
     position: absolute;
-    top: 18px;
-    right: 8px;
     opacity: 0.2;
+
+    svg {
+      fill: #231f20;
+    }
   }
 
   &--telephone {
-    width: 25px;
-    height: 24px;
-    .paste-image(-987px 0px;);
+    top: 18px;
+    right: 8px;
   }
 
   &--e-mail {
     top: 23px;
     right: 4px;
-    width: 32px;
-    height: 21px;
-    .paste-image(-1040px 0px;);
   }
 }
 
@@ -218,16 +216,10 @@
   &--e-mail:hover ~ .main-form__list-label,
   &--e-mail:focus ~ .main-form__list-label {
     opacity: 1;
-  }
 
-  &--telephone:hover ~ .main-form__list-label,
-  &--telephone:focus ~ .main-form__list-label {
-    .paste-image(-1014px 0px;);
-  }
-
-  &--e-mail:hover ~ .main-form__list-label,
-  &--e-mail:focus ~ .main-form__list-label {
-    .paste-image(-1074px 0px;);
+    svg {
+      fill: #63d1bb;
+    }
   }
 }
 

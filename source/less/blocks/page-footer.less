@@ -19,27 +19,25 @@
   position: relative;
   display: none;
 
-  &::before {
+  svg {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    width: 102px;
-    height: 34px;
+    fill: #231f20;
   }
 
-  &[href]:hover img,
-  &[href]:active img {
-    display: none;
+  &[href]:hover,
+  &[href]:active {
+    svg {
+      fill: #63d1bb;
+    }
   }
 
-  &[href]:hover::before,
-  &[href]:active::before {
-    .paste-image(-1157px 0px;);
-  }
-
-  &[href]:active::before {
-    opacity: 0.3;
+  &[href]:active {
+    svg {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -62,47 +60,36 @@
   width: 23px;
   height: 28px;
 
-  &--icon-instagram,
-  &--icon-facebook,
-  &--icon-twitter {
-    &:active {
-      opacity: 0.3;
+  svg {
+    fill: #231f20;
+  }
+
+  &:hover,
+  &:active {
+    svg {
+      fill: #63d1bb;
     }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   &--icon-instagram {
     margin-left: 13px;
     width: 22px;
     height: 21px;
-    .paste-image(-652px 0px;);
-
-    &:hover,
-    &:active {
-      .paste-image(-676px 0px;);
-    }
   }
 
   &--icon-facebook {
     width: 15px;
     height: 28px;
-    .paste-image(-700px 0px;);
-
-    &:hover,
-    &:active {
-      .paste-image(-717px 0px;);
-    }
   }
 
   &--icon-twitter {
     margin-right: 20px;
     width: 23px;
     height: 20px;
-    .paste-image(-734px 0px;);
-
-    &:hover,
-    &:active {
-      .paste-image(-760px 0px;)
-    }
   }
 }
 
@@ -123,24 +110,23 @@
   padding-right: 57px;
   height: 34px;
 
-  &::before {
+  svg {
     content: "";
     position: absolute;
     top: 1px;
     right: 1px;
-    width: 27px;
-    height: 34px;
-    .paste-image(-786px 0px;);
+    fill: #63d1bb;
   }
 
-  &:active,
-  &:active::before {
+  &:hover,
+  &:active {
+    svg {
+      fill: #46c1ae;
+    }
+  }
+
+  &:active {
     opacity: 0.3;
-  }
-
-  &:hover::before,
-  &:active::before {
-    .paste-image(-786px -37px;);
   }
 }
 
