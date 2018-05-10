@@ -88,13 +88,17 @@
     width: 100%;
     min-height: 142px;
     box-sizing: border-box;
-    .set-font(400; 17px; 18px; fade(#444444; 30%));
+    .set-font(400; 17px; 18px; #444444);
     border: 2px solid #444444;
     resize: none;
 
     &:hover,
     &:focus {
       border-color: #62d1ba;
+    }
+
+    &::placeholder {
+      color: fade(#444444, 30%);
     }
   }
 }
@@ -184,13 +188,17 @@
   height: 51px;
   box-sizing: border-box;
   background-color: inherit;
-  .set-font(400; 17px; 18px; fade(#444444; 30%));
+  .set-font(400; 17px; 18px; #444444);
   border: none;
   border-bottom: 2px solid #000000;
 
   &:hover,
   &:focus {
     border-color: #62d1ba;
+  }
+
+  &::placeholder {
+    color: fade(#444444, 30%);
   }
 
   &--type:checked ~ .main-form__list-label {
