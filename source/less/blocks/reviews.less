@@ -115,10 +115,26 @@
     padding-top: 77px;
     padding-bottom: 50px;
     min-height: 330px;
-    .paste-image( top left; url("../img/review@1x.webp"), url("../img/review@1x.jpg"); 350px 457px;);
+  }
 
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/review@2x.webp"), url("../img/review@2x.jpg");
+  .webp {
+    .reviews__wrapper {
+      .paste-image( top left; url("../img/review@1x.webp"); 350px 457px;);
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/review@2x.webp");
+      }
+    }
+  }
+
+  .no-webp,
+  .no-js {
+    .reviews__wrapper {
+      .paste-image( top left; url("../img/review@1x.jpg"); 350px 457px;);
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/review@2x.jpg");
+      }
     }
   }
 
@@ -188,14 +204,41 @@
   .reviews__wrapper {
     padding-top: 0;
     padding-bottom: 0;
-    background-image: none;
+  }
+
+  .webp,
+  .no-webp,
+  .no-js {
+    .reviews__wrapper {
+      background-image: none;
+    }
   }
 
   .reviews__wrapper-content {
     padding-top: 70px;
     padding-bottom: 100px;
     min-height: 278px;
-    .paste-image(top left; url("../img/review@1x.jpg"); 350px 457px;);
+  }
+
+  .webp {
+    .reviews__wrapper-content {
+      .paste-image( top left; url("../img/review@1x.webp"); 350px 457px;);
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/review@2x.webp");
+      }
+    }
+  }
+
+  .no-webp,
+  .no-js {
+    .reviews__wrapper-content {
+      .paste-image( top left; url("../img/review@1x.jpg"); 350px 457px;);
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/review@2x.jpg");
+      }
+    }
   }
 
   .reviews__title,
