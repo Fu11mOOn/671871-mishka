@@ -141,6 +141,12 @@
       height: 35px;
       border-radius: 50%;
     }
+
+    &:active {
+      &::before {
+        background-image: radial-gradient(at center, #62d1ba 30%, white 30%);
+      }
+    }
   }
 
   &--type-accessory {
@@ -160,6 +166,16 @@
       top: -1px;
       width: 36px;
       height: 35px;
+    }
+
+    &:active::after {
+      content: "";
+      position: absolute;
+      top: 11px;
+      left: 10px;
+      width: 22px;
+      height: 16px;
+      .paste-image(-952px -28px;);
     }
   }
 
@@ -395,6 +411,13 @@
         left: 0;
         width: 50px;
         height: 48px;
+      }
+
+      &:active::after {
+        left: 11px;
+        width: 33px;
+        height: 23px;
+        .paste-image(-952px 0px;);
       }
     }
 
