@@ -122,16 +122,12 @@
       border: 2px solid #000000;
     }
 
-    &:hover {
-      &::before {
-        border-color: #62d1ba;
-      }
+    &:hover::before {
+      border-color: #62d1ba;
     }
 
-    &:active {
-      &::before {
-        border-color: fade(#000000, 30%);
-      }
+    &:active::before {
+      border-color: fade(#000000, 30%);
     }
   }
 
@@ -142,10 +138,8 @@
       border-radius: 50%;
     }
 
-    &:active {
-      &::before {
-        background-image: radial-gradient(at center, #62d1ba 30%, white 30%);
-      }
+    &:active::before {
+      background-image: radial-gradient(at center, #62d1ba 30%, white 30%);
     }
   }
 
