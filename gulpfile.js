@@ -43,6 +43,8 @@ gulp.task("serve", function() {
   gulp.watch("source/less/**/*.less", ["style"]);
   gulp.watch("source/*.html", ["html"]).on("change", server.reload);
   gulp.watch("source/js/*.js", ["jsmin"]).on("change", server.reload);
+  gulp.watch("source/img/copy/*.svg", ["images"]).on("change", server.reload);
+  gulp.watch("source/img/*.{png,jpg}", ["images", "webp"]).on("change", server.reload);
 });
 
 gulp.task("images", function() {
